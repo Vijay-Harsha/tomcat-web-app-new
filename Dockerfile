@@ -4,7 +4,7 @@ LABEL maintainer="Vijay H Thakur <vijayanusaya.com>"
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-COPY target/tomcat-web-app-new.war /usr/local/tomcat/webapps/tomcat-web-app-new.war
+COPY target/maven-web-app.war /usr/local/tomcat/webapps/maven-web-app.war
 
 EXPOSE 8080
 
