@@ -62,7 +62,7 @@ pipeline {
         scp -o StrictHostKeyChecking=no k8s-deploy.yml ec2-user@172.31.2.214:/home/ec2-user/
 
         ssh -o StrictHostKeyChecking=no ec2-user@172.31.2.214 '
-        sudo kubectl apply -f /home/ec2-user/k8s-deploy.yml
+        sudo kubectl apply -f /home/ec2-user/k8s-deploy-new.yml
         '
         """
     }
